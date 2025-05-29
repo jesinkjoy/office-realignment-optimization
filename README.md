@@ -1,22 +1,22 @@
 # 🧩 Office Realignment Optimization
 
-This project focuses on optimizing office space allocation to minimize commuting time and improve operational efficiency using Excel Solver and AMPL. 
+This project focuses on optimizing office space allocation across regions to minimize travel hours and operational costs. It involves transitioning from Excel Solver models to structured AMPL-based optimization. 
 
 ---
 
 ## 🧠 Objectives
 
-- Optimize employee-to-office assignments by minimizing total travel hours and associated costs.
-- Develop structured models using Excel Solver (Phase I) and AMPL (Phase II).
-- Apply linear programming techniques to improve decision-making in facility planning.
+- Optimize assignment of employees to regional offices using linear programming.
+- Minimize commuting hours and total cost while meeting operational constraints.
+- Transition from spreadsheet-based modeling to scalable programmatic optimization in AMPL.
 
 ---
 
 ## 📈 Methodology
 
-- **Phase I**: Created a basic optimization model using Excel Solver to assign employees to nearby offices based on travel hours.
-- **Phase II**: Developed a structured linear programming model in AMPL, using cleaned and normalized data inputs.
-- **Modeling Focus**: Incorporated constraints like availability limits and cost efficiency to produce an optimal realignment strategy.
+- **Phase I**: Built a basic optimization model using Excel Solver to allocate employees based on commute hours.
+- **Phase II**: Used AMPL to develop a scalable, structured optimization model based on regional capacity, cost constraints, and role-based availability.
+- **Data Preparation**: Created detailed region-store mappings and aggregated cost/time assumptions to support modeling.
 
 ---
 
@@ -24,31 +24,38 @@ This project focuses on optimizing office space allocation to minimize commuting
 
 - Excel Solver
 - AMPL (Algebraic Modeling Language)
+- Jupyter Notebook
 - Linear Programming
-- Data Preparation in Excel
+- Python (for documentation and explanation)
 
 ---
 
 ## 📂 Files
 
-- `data/realignment_raw_data.xlsx` – Original dataset (hours, availability, costs, etc.)
-- `data/realignment_data_ampl_ready.xlsx` – Preprocessed version for AMPL
-- `code/phase1_solver_model.xlsx` – Excel Solver-based model from Phase I
-- `docs/phase2_report.docx` – Final project report with AMPL implementation
-- `docs/phase2_essential_components.docx` – Mathematical model formulation
-- `docs/phase2_executive_summary.docx` – Business overview and key findings
-- `docs/realignment_project_description.pdf` – Problem statement and background
+### `data/`
+- `realignment_data_ampl.xlsx` – Final structured dataset used for AMPL modeling
+- `Part C Workings.xlsx` – Intermediate calculations for round-trips, costs, and mileage assumptions
+
+### `code/`
+- `Office_Realignment_Project_Phase_II.ipynb` – Jupyter notebook explaining modeling logic, assumptions, and steps
+- `phase1_solver_model.xlsx` – Excel Solver model used in Phase I
+
+### `docs/`
+- `Phase_2_report.docx` – Full write-up of Phase II analysis and results
+- `Phase2_EssentialComponents.docx` – AMPL formulation: variables, parameters, objective, constraints
+- `Phase2_executivesummary.docx` – One-page summary of business value and key insights
+- `realignment_project_description.pdf` – Project background and problem definition
 
 ---
 
 ## 🧠 Key Insights
 
-- Realignment strategies significantly impact commuting time and regional distribution.
-- Excel Solver is effective for small-scale modeling, but AMPL provides greater scalability and structure.
-- Clean data formatting is essential for translating real-world problems into linear programming models.
+- AMPL modeling allows greater scalability and control compared to Excel-based approaches.
+- Significant reductions in total commute time can be achieved with optimized office allocations.
+- Proper data preparation and cost/time structuring are critical for building realistic models.
 
 ---
 
 ## 📌 Note
 
-This project was completed as an academic assignment. The data used is synthetic and intended solely for educational purposes.
+This project was completed as an academic assignment. All data used is synthetic and intended solely for educational purposes.
